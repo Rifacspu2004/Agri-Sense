@@ -1,0 +1,31 @@
+{
+  "timestamp": "2026-10-28T18:58:43Z",
+  "sources_queried": [
+    "World Bank Open Data API",
+    "FAOSTAT Crop Production Open Mirror"
+  ],
+  "status": "SUCCESS",
+  "records_fetched": 0,
+  "years_covered": [
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "total_records_in_dataset": 245,
+  "new_records_added": 273,
+  "distinct_crops": [
+    "Cassava",
+    "Maize",
+    "Potatoes",
+    "Rice, paddy",
+    "Sorghum",
+    "Soybeans",
+    "Wheat",
+    "Yams"
+  ],
+  "distinct_countries": 11
+}

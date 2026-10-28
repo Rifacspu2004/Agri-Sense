@@ -1,0 +1,25 @@
+---
+title: Root and Tuber Crop Yield Potentials (Potatoes, Cassava, Sweet Potatoes, Yams)
+publisher: International Potato Center (CIP) & FAO
+url: https://cipotato.org/knowledge-bank/tuber-yield-modelling
+date: 2023-10-15
+category: Root & Tuber Yield Benchmarks
+---
+Roots and tubers are amongst the highest biomass-producing crops per unit of land and time. Because tubers have high water content (70-80%), their nominal fresh-weight yields are significantly higher than dry grain cereals:
+
+1. Potatoes (Solanum tuberosum):
+- Global Average Yield: 21.0 tonnes/ha (210,000 hg/ha).
+- High-Technology Production (USA, Netherlands, Belgium, France, UK): 40.0 to 52.0 tonnes/ha (400,000 to 520,000 hg/ha).
+- Developing Country Average (India, Algeria, Mexico): 18.0 to 28.0 tonnes/ha (180,000 to 280,000 hg/ha).
+- Physiological Yield Factors: Tuber initiation and bulking require cool night temperatures (15-18°C). When night temperatures exceed 22°C, assimilate partitioning shifts back to foliage, causing severe tuber yield collapse.
+
+2. Cassava (Manihot esculenta):
+- Global Average Yield: 11.0 tonnes/ha (110,000 hg/ha).
+- Potential under Optimized Management (India, Brazil, Thailand): 25.0 to 35.0 tonnes/ha (250,000 to 350,000 hg/ha).
+- Rainfed Semi-Arid Sub-Saharan Africa: 8.0 to 14.0 tonnes/ha.
+- Key Characteristic: Unsurpassed drought resilience; can survive extended dry periods by shedding leaves and resumes growth upon rain onset.
+
+3. Sweet Potatoes (Ipomoea batatas) & Yams:
+- Sweet Potatoes High Yield: 15.0 to 25.0 tonnes/ha (150,000 to 250,000 hg/ha).
+- Yams (West Africa Belt - Nigeria, Ghana): 10.0 to 18.0 tonnes/ha (100,000 to 180,000 hg/ha).
+- Soil Compaction Constraint: Heavy clay soils restrict root expansion, reducing marketable tuber yield by 35%. Loose, friable sandy loam soils are required for peak yield expressions.

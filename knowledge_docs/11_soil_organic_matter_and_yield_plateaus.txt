@@ -1,0 +1,16 @@
+---
+title: Soil Organic Carbon and Physical Ceiling on Crop Yield Plateaus
+publisher: ICAR - Indian Institute of Soil Science & FAO
+url: https://icar.org.in/iiss/soil-carbon-crop-yield-ceiling
+date: 2023-02-18
+category: Soil Fertility & Yield Ceiling
+---
+Soil Organic Carbon (SOC) is the primary physical and biological determinant of the maximum attainable crop yield in any given agro-ecosystem. When SOC drops below critical thresholds, crop yield response to inorganic fertilizer diminishes sharply.
+
+1. Empirical Yield Response to SOC Concentration:
+- Low SOC (< 0.4%): Crop yields exhibit high vulnerability to short-duration drought. Water infiltration is poor, surface crusting limits germination, and fertilizer use efficiency drops by up to 50%.
+- Optimal SOC (0.75% - 1.5%): Yield plateau expands. Every 0.1% increase in SOC within topsoil stores approximately 20,000 liters of additional plant-available water per hectare, effectively buffering crops against 7-10 days of dry spells.
+- High SOC (> 2.0% in temperate soils): Supports maximal cation exchange capacity (CEC), buffering micro and macronutrient availability.
+
+2. Impact on Yield Forecasting Models:
+In advanced yield models, incorporating soil organic matter transforms yield estimates from coarse regional figures into precision field-level forecasts. Regions with severely degraded soils exhibit a 25-35% lower yield response for the exact same annual rainfall and temperature inputs.

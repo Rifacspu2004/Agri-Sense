@@ -1,0 +1,18 @@
+---
+title: Surveillance and Chemical/Genetic Management of Wheat Rusts
+publisher: Indian Council of Agricultural Research (ICAR)
+url: https://icar.org.in/guidelines/wheat-stripe-rust-advisory
+date: 2023-03-01
+category: Cereal Pathology
+---
+Wheat crop yields in temperate and sub-tropical regions face major threats from three rust pathotypes: Stripe (Yellow) Rust (Puccinia striiformis), Leaf (Brown) Rust (Puccinia triticina), and Stem (Black) Rust (Puccinia graminis).
+
+Diagnostic Identification:
+- Yellow/Stripe Rust: Bright yellow pustules arranged in linear parallel stripes along leaf veins; prevalent under cool weather (10-15°C) with morning dew.
+- Brown/Leaf Rust: Scattered round to oval orange-brown pustules predominantly on the upper leaf surface.
+
+Management Protocols:
+1. Genetic Resistance: Sow rust-resistant and tolerant cultivars (such as HD-3086, DBW-187, DBW-222, PBW-725) rather than susceptible older varieties.
+2. Timely Sowing: Complete sowing before mid-November to escape terminal heat stress and peak rust sporulation periods.
+3. Fungicidal Intervention:
+- At first appearance of yellow rust stripes, immediately spray Tebuconazole 25.9% EC @ 1 ml/liter or Propiconazole 25% EC @ 1 ml/liter (500 ml dissolved in 500 liters of water per hectare). Repeat after 15 days if conditions favor reinfection.

@@ -1,0 +1,27 @@
+---
+title: Global Cereal and Tuber Yield Optimization Benchmarks
+publisher: Food and Agriculture Organization (FAO) Guidelines
+url: https://www.fao.org/faostat/en/yield-benchmarks
+date: 2023-01-20
+category: Global Agronomy & Benchmarks
+---
+FAO statistical analysis of international agricultural productivity categorizes yield potentials across major staple crops based on climatic zones and input regimes:
+
+1. Maize (Zea mays):
+- Rainfed semi-arid potential: 2.5 - 4.5 tonnes/ha (25,000 - 45,000 hg/ha).
+- High-input irrigated temperate/tropical: 8.0 - 12.0+ tonnes/ha.
+- Key limiting factor: Water deficit during the silking/tasseling window leads to high kernel abortion.
+
+2. Wheat (Triticum aestivum):
+- Cool temperate / irrigated zones: 5.0 - 8.5 tonnes/ha.
+- Sub-tropical irrigated (Indo-Gangetic plain): 3.5 - 5.5 tonnes/ha.
+- Limiting factor: Terminal heat stress during grain filling (temperatures exceeding 32°C accelerate senescence).
+
+3. Potatoes (Solanum tuberosum):
+- High-performing global average: 25 - 45 tonnes/ha (250,000 - 450,000 hg/ha).
+- Limiting factor: Night temperatures exceeding 20°C drastically curtail tuber bulking; susceptibility to Phytophthora infestans (Late Blight).
+
+4. Cassava (Manihot esculenta):
+- Average smallholder yield: 10 - 15 tonnes/ha.
+- Improved clonal selections with fertilizer: 25 - 35 tonnes/ha.
+- Resilience: Exceptional tolerance to drought and acidic soils; susceptible to Cassava Brown Streak and Mosaic viruses.

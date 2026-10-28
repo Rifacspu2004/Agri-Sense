@@ -1,0 +1,22 @@
+---
+title: Rainfall and Water Deficit Dynamics in Crop Yield Prediction
+publisher: World Meteorological Organization (WMO) & ICAR
+url: https://icar.org.in/agromet/rainfall-yield-correlation-guidelines
+date: 2023-09-12
+category: Weather Drivers of Crop Yield
+---
+Annual precipitation is one of the most critical numerical inputs in tabular yield prediction models. However, the correlation between rainfall and yield is non-linear and crop-dependent:
+
+1. Non-Linear Yield Response Curves:
+- In low-rainfall bands (< 400 mm/year): Yield follows a steep upward trajectory as moisture availability relieves severe stomatal closure and vegetative stunting.
+- Optimal rainfall window (600 - 1500 mm/year for most cereals and pulses): Yield achieves maximum efficiency per millimeter of transpiration.
+- Excessive rainfall (> 2200 mm/year): The curve flattens and drops due to soil waterlogging, root hypoxia (oxygen depletion), increased fungal disease pressure, and nutrient leaching (especially nitrates and sulfur).
+
+2. Critical Phenological Water Stress Windows:
+- Maize: Tasseling and silking (Yield penalty: 4% to 8% per day of severe moisture stress).
+- Wheat: Crown root initiation (21 DAS) and flowering/grain fill (Yield penalty: 3% to 5% per day).
+- Rice: Panicle initiation to flowering (Moisture deficit causes spikelet sterility exceeding 70%).
+- Soybeans: Pod filling (R3 to R5 stages; water deficit causes flower shedding and flat empty pods).
+
+3. Irrigation Compensation:
+In regions with low natural precipitation (e.g., Egypt at ~51 mm/yr, Pakistan at ~494 mm/yr), crop yields remain high (e.g., Egyptian maize at ~7.9 tonnes/ha) because predictive models implicitly account for intensive canal and Nile river basin irrigation systems.

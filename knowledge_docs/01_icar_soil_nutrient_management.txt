@@ -1,0 +1,16 @@
+---
+title: Integrated Soil Health and Macronutrient (NPK) Management
+publisher: Indian Council of Agricultural Research (ICAR)
+url: https://icar.org.in/guidelines/soil-health-npk
+date: 2023-04-15
+category: Soil Fertility & Nutrition
+---
+Optimal crop productivity relies upon balanced soil nutrition guided by soil health testing rather than indiscriminate fertilizer application. ICAR recommends maintaining a soil organic carbon level above 0.75% to sustain microbial diversity and cation exchange capacity.
+
+Macronutrient Guidelines (N:P:K):
+1. Nitrogen (N): Crucial for vegetative canopy development and chlorophyll synthesis. Nitrogen split applications (basal, tillering/knee-high stage, and panicle initiation/flowering) prevent volatilization and groundwater nitrate leaching. Neemand sulfur-coated urea enhances nitrogen-use efficiency by 15-20%.
+2. Phosphorus (P): Essential for root proliferation and early plant establishment. Phosphate fertilizers (DAP or Single Super Phosphate) should be placed 5 cm below and to the side of seeds during sowing to facilitate proximity to emerging root hairs.
+3. Potassium (K): Regulates stomatal conductance, osmotic potential, and disease resistance. Deficiencies present as marginal chlorosis on older leaves, reducing lodging resistance in cereals and tuber expansion in potatoes.
+
+Secondary and bio-enhancers:
+Incorporate green manure crops (Sesbania aculeata or Crotalaria juncea) at 45-50 days before the main crop to fix atmospheric nitrogen and solubilize native soil phosphorus.

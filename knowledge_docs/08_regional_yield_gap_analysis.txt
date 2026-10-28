@@ -1,0 +1,23 @@
+---
+title: Global and Regional Crop Yield Gap Analysis
+publisher: Global Yield Gap Atlas (GYGA) & FAO
+url: https://www.yieldgap.org/yield-gap-methodology
+date: 2023-05-10
+category: Regional Yield Potential
+---
+The 'Yield Gap' is defined as the difference between the theoretical yield potential (Yp) achieved under disease-free, fully irrigated conditions and the actual average farm yield (Ya) harvested by growers in a specific region.
+
+1. Regional Variations in Actual vs Potential Yields:
+- North America & Western Europe:
+  - Exploitable yield gap is narrow (typically only 15% - 25%).
+  - Actual yields hover close to theoretical potential due to high genetic purity of F1 hybrids, GPS-guided variable rate fertilizer application, and comprehensive crop protection.
+- South Asia (India, Pakistan, Bangladesh):
+  - Yield gap stands at 30% - 50%.
+  - Factors limiting actual yields include suboptimal nitrogen-phosphorus-potassium balance, delayed wheat sowing due to late paddy harvesting, and episodic monsoon irregularities.
+- Sub-Saharan Africa:
+  - Yield gap is wide (60% - 75%).
+  - Actual cereal yields hover around 1.5 - 2.5 t/ha against agro-ecological potentials of 6.0 - 8.0 t/ha.
+  - Primary constraints: Phosphorus fixation in weathered oxisols, low fertilizer access (<20 kg nutrients/ha compared to 150+ kg in Europe), and reliance on unselected landrace seeds.
+
+2. Significance for Yield Prediction Algorithms:
+When training predictive machine learning models across countries (e.g. Area feature), the model learns these baseline institutional, genetic, and infrastructural constants. A model predicting maize yield in the USA will output ~9.5 t/ha, whereas for the identical rainfall and temperature in Kenya it might predict ~2.2 t/ha, reflecting the regional yield ceiling.

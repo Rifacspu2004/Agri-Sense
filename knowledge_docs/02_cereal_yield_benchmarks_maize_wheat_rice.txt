@@ -1,0 +1,27 @@
+---
+title: Cereal Crop Yield Benchmarks and Yield Potential (Maize, Wheat, Rice)
+publisher: Food and Agriculture Organization (FAO) Statistics Division
+url: https://www.fao.org/faostat/en/crop-yields-cereal-benchmarks
+date: 2023-12-05
+category: Cereal Yield Benchmarks
+---
+Cereal crops (Maize, Wheat, Paddy Rice) provide over 50% of direct human caloric intake. Global yield benchmarks vary widely based on irrigation, input technology, and climate:
+
+1. Maize (Zea mays) Yield Benchmarks:
+- Global Average Yield: 5.8 tonnes/ha (58,000 hg/ha).
+- High-Technology Irrigated/Temperate Yields (USA Corn Belt, France, New Zealand): 9.5 to 13.0 tonnes/ha (95,000 to 130,000 hg/ha).
+- Sub-Saharan African & Rainfed Tropical Averages: 1.8 to 2.5 tonnes/ha (18,000 to 25,000 hg/ha).
+- Yield Driver: Maize is extremely sensitive to moisture stress in the 2-week window spanning silking and tasseling; drought during this window can slash predicted yields by 40-60%.
+
+2. Wheat (Triticum aestivum) Yield Benchmarks:
+- Global Average Yield: 3.5 tonnes/ha (35,000 hg/ha).
+- High-Yield Western Europe (UK, Germany, France): 7.5 to 9.0 tonnes/ha (75,000 to 90,000 hg/ha).
+- Indo-Gangetic Plains (India, Pakistan): 3.2 to 4.5 tonnes/ha (32,000 to 45,000 hg/ha).
+- Australian & Semi-Arid Rainfed: 1.8 to 2.8 tonnes/ha (18,000 to 28,000 hg/ha).
+- Yield Driver: Yield is determined by number of grains per spike and individual grain weight. Heat stress (>32°C during anthesis) triggers premature senescence, reducing yields by 4-5% per degree rise.
+
+3. Rice, Paddy (Oryza sativa) Yield Benchmarks:
+- Global Average Yield: 4.6 tonnes/ha (46,000 hg/ha).
+- High Productivity (Australia, Egypt, Japan, USA): 7.0 to 10.0 tonnes/ha (70,000 to 100,000 hg/ha).
+- South & Southeast Asia (India, Indonesia, Vietnam): 3.0 to 5.5 tonnes/ha (30,000 to 55,000 hg/ha).
+- Yield Driver: Solar radiation during panicle initiation and consistent water availability during booting and heading phases.

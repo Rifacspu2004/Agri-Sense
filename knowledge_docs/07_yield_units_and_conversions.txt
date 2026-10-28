@@ -1,0 +1,32 @@
+---
+title: Agricultural Yield Measurement Units, Standards, and Conversions
+publisher: FAOSTAT Standards & International Agronomy Guild
+url: https://www.fao.org/faostat/en/standards-yield-units
+date: 2023-06-15
+category: Yield Metrics & Standards
+---
+Agricultural yield reports employ different units depending on regional customs, commodity trade conventions, and statistical standards. Accurate conversion is vital to avoid tenfold errors in prediction systems:
+
+1. FAOSTAT Standard Unit: Hectograms per Hectare (hg/ha):
+- 1 hectogram (hg) = 100 grams = 0.1 kilogram (kg).
+- 1 hectare (ha) = 10,000 square meters.
+- 10,000 hg/ha = 1,000 kg/ha = 1 metric tonne per hectare (t/ha).
+- Kaggle Crop Yield datasets report target values explicitly in `hg/ha`.
+
+2. Standard Conversion Formulas:
+- From hg/ha to Tonnes/ha:
+  Yield (Tonnes/ha) = Yield (hg/ha) / 10,000.0
+- From Tonnes/ha to hg/ha:
+  Yield (hg/ha) = Yield (Tonnes/ha) * 10,000.0
+- From kg/ha to Tonnes/ha:
+  Yield (Tonnes/ha) = Yield (kg/ha) / 1,000.0
+- From Bushels per Acre (US convention) to Tonnes/ha:
+  - Maize: 1 bu/acre ≈ 0.0628 tonnes/ha (e.g. 175 bu/acre = ~11.0 t/ha).
+  - Wheat / Soybean: 1 bu/acre ≈ 0.0673 tonnes/ha (e.g. 50 bu/acre = ~3.36 t/ha).
+
+3. Representative Yield Targets by Unit:
+- Indian Rice: ~30,000 to 45,000 hg/ha (3.0 to 4.5 t/ha).
+- US Maize: ~85,000 to 110,000 hg/ha (8.5 to 11.0 t/ha).
+- European Wheat: ~70,000 to 85,000 hg/ha (7.0 to 8.5 t/ha).
+- Commercial Potatoes: ~250,000 to 450,000 hg/ha (25.0 to 45.0 t/ha).
+- Tropical Cassava: ~100,000 to 200,000 hg/ha (10.0 to 20.0 t/ha).

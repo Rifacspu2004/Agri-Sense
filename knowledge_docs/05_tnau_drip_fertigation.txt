@@ -1,0 +1,16 @@
+---
+title: Precision Drip Irrigation and Fertigation Schedules for High-Value Crops
+publisher: TNAU Agritech Portal
+url: https://agritech.tnau.ac.in/fertigation_precision.html
+date: 2023-09-05
+category: Precision Irrigation & Fertigation
+---
+Fertigation delivers fully water-soluble fertilizers directly into the root zone via pressurized micro-irrigation systems, achieving 85-95% water and nutrient-use efficiency compared to 40-50% in broadcast flood irrigation.
+
+Key Protocol Guidelines:
+1. System Maintenance: Install disc filters (120 mesh / 130 micron) and sand media filters to eliminate physical suspended particles. Periodically perform acid treatment with hydrochloric acid (pH 4.0) to dissolve calcium and magnesium carbonate precipitates in dripper emitters.
+2. Fertilizer Compatibility: Never mix calcium-containing fertilizers (such as Calcium Nitrate) with phosphates (MAP/DAP) or sulfates (Magnesium Sulfate/Potassium Sulfate) in the same stock injection tank to avoid insoluble precipitates.
+3. Scheduling by Phenological Stages:
+- Establishment & Vegetative Stage: High phosphorus (12:61:0) and moderate nitrogen to stimulate primary and secondary root branch systems.
+- Flowering & Fruit/Grain Setting Stage: Balanced 19:19:19 formulation supplemented with micronutrients.
+- Maturity & Ripening Stage: High potassium (0:0:50 or 13:0:45) to enhance starch synthesis, fruit size, brix, and drought resistance.

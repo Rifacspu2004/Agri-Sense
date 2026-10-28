@@ -1,0 +1,25 @@
+---
+title: Temperature Thresholds and Thermal Time in Crop Yield Prediction
+publisher: Food and Agriculture Organization (FAO) & IPCC Agronomy Group
+url: https://www.fao.org/climate-change/temperature-yield-thresholds
+date: 2023-08-18
+category: Weather Drivers of Crop Yield
+---
+Temperature dictates the metabolic rate of plants, leaf appearance rates, and total duration of the crop growth cycle. In machine learning yield models, average temperature serves as a proxy for thermal energy and heat stress risk.
+
+1. Thermal Acceleration and Growth Duration:
+- Higher temperatures accelerate crop development (phenology), meaning the crop reaches maturity faster.
+- Yield Penalty of Shortened Growth: A shorter vegetative and grain-filling duration limits the total cumulative solar radiation intercepted by the canopy. For wheat, every 1°C increase above the optimum decreases grain duration by 2.8 days, cutting final grain weight by 4-6%.
+
+2. Critical Cardinal Temperature Thresholds:
+- Cool Season Crops (Wheat, Barley, Potatoes):
+  - Base Temperature (Tb): 4°C to 5°C.
+  - Optimum Range: 15°C to 22°C.
+  - Maximum Threshold: > 30°C causes pollen sterility and sharp yield degradation.
+- Warm Season Crops (Maize, Rice, Sorghum, Soybean):
+  - Base Temperature (Tb): 10°C.
+  - Optimum Range: 24°C to 30°C.
+  - Maximum Threshold: > 35°C during flowering causes silk desiccation in maize and floret sterility in rice.
+
+3. Night Temperature Effects:
+Elevated night temperatures accelerate dark respiration, consuming stored assimilates and sugars synthesized during daylight hours. Night warming of 1°C during grain filling reduces rice yields by approximately 10%.

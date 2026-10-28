@@ -1,0 +1,15 @@
+---
+title: Cassava Mosaic Disease (CMD) Vector Control and Yield Maximization
+publisher: TNAU Agritech Portal
+url: https://agritech.tnau.ac.in/horticulture/horti_tuber_crops_tapioca.html
+date: 2023-10-02
+category: Tuber Crops & Virology
+---
+Cassava (Tapioca) is a primary industrial and food security tuber crop. Cassava Mosaic Disease (CMD), caused by Cassava Mosaic Geminivirus, transmitted by the whitefly vector (Bemisia tabaci), causes leaf chlorosis, puckering, stunted canopy, and up to 80% loss in tuber starch weight.
+
+Production & Protection Protocols:
+1. Disease-Free Stem Setts: Select healthy mature stem cuttings (setts) of 15-20 cm length having 8-10 viable nodes from disease-free parental plants. Treat setts in a solution of Carbendazim (1 g/liter) and Imidacloprid (0.5 ml/liter) for 15 minutes before planting.
+2. Vector Suppression:
+- Spray Thiamethoxam 25% WG @ 0.3 g/liter or Acetamiprid 20% SP @ 0.5 g/liter at 15-day intervals during initial vegetative flushing to suppress whitefly colonization.
+3. Micronutrient Spray for Tuber Bulking:
+- Foliar application of TNAU Cassava Tonic @ 5 kg/ha at 60 and 90 days after planting significantly improves starch accumulation and tuber size, boosting average harvest yields from 25 tonnes/ha to over 38 tonnes/ha.

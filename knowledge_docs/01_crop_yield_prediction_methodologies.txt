@@ -1,0 +1,21 @@
+---
+title: Machine Learning Methodologies for Crop Yield Prediction
+publisher: International Food Policy Research Institute (IFPRI) & ICAR
+url: https://icar.org.in/research/crop-yield-prediction-machine-learning
+date: 2023-11-10
+category: Crop Yield Prediction Methodology
+---
+Crop yield prediction involves estimating the expected harvest quantity per unit area (commonly measured in metric tonnes per hectare or hectograms per hectare) prior to harvest. Modern predictive systems combine supervised machine learning with agro-climatic variables to capture non-linear interactions between weather, soil, and management practices.
+
+Key Algorithmic Frameworks for Yield Prediction:
+1. Ensemble Tree-Based Models (Random Forest Regressor & Gradient Boosting):
+- Random Forest is the benchmark for tabular agricultural yield datasets. By aggregating hundreds of decorrelated decision trees, it handles non-linear relationships (such as non-linear temperature damage functions) without overfitting.
+- Handles collinear predictors such as rainfall, temperature, and pesticide volume with high stability and robust feature importance scores.
+2. Feature Sets in Supervised Yield Regressors:
+- Geographic and Crop Identity: Area (country or agro-ecological zone) and Item (crop species) encode baseline soil types, cultivar genetics, and national infrastructure.
+- Temporal Predictors: Year accounts for technological progress (breeding advancements, mechanization, improved agronomy) representing an average yield increase of 1.2% per decade globally.
+- Climatic Factors: Annual precipitation (mm/year) and average annual temperature (°C) dictate thermal accumulation and water availability.
+- Input Intensity: Pesticide usage (metric tonnes) functions as an indicator of pest management intensity and technological adoption.
+3. Model Evaluation Metrics for Yield Forecasting:
+- Coefficient of Determination (R²): Measures the proportion of yield variance explained by climatic and input variables (typically 0.80 - 0.95 in multi-country tabular models).
+- Mean Absolute Error (MAE) & Root Mean Squared Error (RMSE): Expressed in hg/ha and converted to tonnes/ha to provide tangible agronomic error margins.

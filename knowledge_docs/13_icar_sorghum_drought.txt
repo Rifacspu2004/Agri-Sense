@@ -1,0 +1,16 @@
+---
+title: Sorghum Agronomy and Moisture Stress Mitigation in Semi-Arid Tropics
+publisher: Indian Council of Agricultural Research (ICAR)
+url: https://icar.org.in/bulletin/sorghum-drought-resilience
+date: 2023-08-25
+category: Dryland Agronomy
+---
+Grain sorghum (Sorghum bicolor) is one of the most drought-resilient C4 cereal crops, exhibiting low transpiration ratios and deep fibrous root architectures capable of penetrating up to 1.8 meters.
+
+Dryland Yield Maximization:
+1. Seed Priming and Sowing Depth:
+- Hydro-priming seeds for 10 hours in water followed by surface shade drying increases germination vigor under limited moisture. Sow at 4-5 cm depth into moist soil seedbeds.
+2. In-situ Moisture Conservation:
+- Implement compartment bunding or tied ridging during pre-monsoon rains to capture 80-90% of episodic rainfall. Mulching with sorghum straw or dry grass @ 4-5 tonnes/ha conserves moisture through the grain-filling period.
+3. Pest Warning - Shoot Fly (Atherigona soccata):
+- Early uniform sowing within 7 to 10 days of monsoon onset escapes the peak oviposition window of shoot fly. Treat seeds with Imidacloprid 70% WS @ 5 g/kg seed.

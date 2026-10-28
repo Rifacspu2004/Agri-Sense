@@ -1,0 +1,18 @@
+---
+title: Integrated Pest Management for Fall Armyworm (Spodoptera frugiperda) in Maize
+publisher: Indian Council of Agricultural Research (ICAR)
+url: https://icar.org.in/advisory/maize-fall-armyworm-ipm
+date: 2023-05-18
+category: Pest Management
+---
+Fall Armyworm (FAW) is an invasive pest that causes devastating defoliation and cob damage in maize crops. Early detection is paramount to prevent economic threshold loss (ETL).
+
+Integrated Control Strategy:
+1. Cultural Practices: Deep summer ploughing to expose pupae to predatory birds and solarization. Intercropping maize with pulses (such as cowpea or pigeon pea) reduces oviposition. Avoid staggered sowing.
+2. Pheromone Monitoring: Install 5 pheromone traps per acre at 15 days after germination. If trap catches exceed 3 moths per trap per day or 5-10% plant damage is observed, commence immediate intervention.
+3. Biological Intervention:
+- Release egg parasitoids (Trichogramma pretiosum) @ 50,000/acre at weekly intervals.
+- Apply neem seed kernel extract (NSKE 5%) or Azadirachtin 1500 ppm @ 5 ml/liter when larvae are early instar (instars 1 and 2).
+4. Chemical Intervention (Targeted Whorl Application):
+- Apply Chlorantraniliprole 18.5% SC @ 0.4 ml/liter or Spinetoram 11.7% SC @ 0.5 ml/liter directly into the leaf whorl using a knapsack sprayer with nozzle cap removed.
+- Rotate modes of action to prevent pesticide resistance.

@@ -1,0 +1,23 @@
+---
+title: Pesticide Usage and Crop Protection Intensity in Yield Prediction Models
+publisher: European and Mediterranean Plant Protection Organization (EPPO) & ICAR
+url: https://icar.org.in/crop-protection/pesticide-yield-efficiency
+date: 2023-07-28
+category: Input Intensity & Yield Protection
+---
+In national and regional crop yield datasets (such as FAOSTAT / Kaggle Crop Yield datasets), pesticide usage (reported in metric tonnes) serves as a macroeconomic indicator of input intensity, capital investment, and technological crop protection.
+
+1. Role of Pesticides in Yield Realization:
+- Pesticides do not directly synthesize yield; rather, they mitigate yield losses caused by biotic stresses (weeds, fungal pathogens, bacterial rots, insect defoliators, and nematodes).
+- Without chemical or biological crop protection, global yield losses are estimated at:
+  - 37% in potatoes (predominantly Late Blight and Colorado Beetle).
+  - 31% in maize (weeds, stem borers, fall armyworm).
+  - 37% in rice (stem borer, blast, bacterial leaf blight, weeds).
+  - 28% in wheat (rusts, powdery mildew, weeds).
+
+2. Diminishing Marginal Returns:
+- In lower input regimes (e.g., smallholder farming systems using < 1000 tonnes nationally), incremental adoption of targeted crop protection produces steep yield gains by preventing catastrophic crop failures.
+- In intensive high-input farming systems (e.g., USA, France, Japan with tens of thousands of tonnes), additional pesticide application reaches an asymptotic plateau. At this plateau, further yield improvements depend on genetic cultivar traits, precision fertigation, and soil biology rather than higher chemical volume.
+
+3. Yield Prediction Feature Interpretation:
+In tree-based regression models, the pesticide feature often acts as an economic proxy for overall agronomic investment: nations with high pesticide utilization simultaneously employ high fertilizer doses, hybrid seeds, and mechanized harvesting.

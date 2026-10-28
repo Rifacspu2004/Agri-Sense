@@ -1,0 +1,18 @@
+---
+title: Climate-Smart Agronomy and Drought-Resilience Strategies
+publisher: Food and Agriculture Organization (FAO) Guidelines
+url: https://www.fao.org/climate-smart-agriculture/guidelines
+date: 2023-07-12
+category: Climate Resilience & Agronomy
+---
+Climate-Smart Agriculture (CSA) addresses three core objectives: sustainably increasing agricultural productivity and farm incomes, adapting and building resilience to climate change shocks (drought, excessive unseasonal precipitation, terminal heat), and reducing greenhouse gas emissions per unit of food produced.
+
+Priority Interventions:
+1. Conservation Agriculture:
+- Minimum soil disturbance (Zero Tillage / Direct Seeded Rice): Preserves soil structure, enhances water infiltration, and reduces diesel consumption by 60-80%.
+- Permanent organic soil cover (residue retention / mulch): Leaves at least 30% crop stubble to suppress evaporative moisture loss and buffer soil surface temperature by 3-5°C during hot summer peaks.
+- Crop rotations: Integrating leguminous pulses in monoculture cereal belts to break pest lifecycles and rebuild biological nitrogen pools.
+2. Rainwater Harvesting & In-Situ Moisture Conservation:
+- Broad-Bed and Furrow (BBF) systems and ridge-and-furrow planting optimize water logging drainage during flash cloudbursts while storing moisture in furrows during subsequent dry spells.
+3. Agronomic Timing:
+- Adjusting planting windows to synchronize critical pollination/tasseling windows with periods of lower heat index.

@@ -1,0 +1,16 @@
+---
+title: Potato Late Blight (Phytophthora infestans) Disease Management
+publisher: Food and Agriculture Organization (FAO) Guidelines
+url: https://www.fao.org/plant-protection/potato-late-blight
+date: 2023-02-14
+category: Plant Pathology & Disease Control
+---
+Late Blight caused by the oomycete Phytophthora infestans remains the single most economically destructive pathogen in potato and tomato production, capable of destroying entire canopies within 7-10 days under cool, humid conditions (relative humidity > 90%, temperature 10-20°C).
+
+Epidemiology and Control Protocols:
+1. Certified Seed Tubers: Plant exclusively certified disease-free seed tubers. Discard any tubers showing dry sunken brown rot or internal marbling.
+2. Preventive Prophylactic Spraying:
+- Apply protective contact fungicides such as Mancozeb 75% WP @ 2.0-2.5 kg/ha or Chlorothalonil 75% WP @ 2.0 kg/ha prior to canopy closure or immediately upon weather forecast of persistent cloudiness and drizzle.
+3. Curative / Systemic Intervention:
+- If lesions (water-soaked dark spots with white mildew border on the underside of leaves) appear, switch to systemic translaminar fungicides: Cymoxanil + Mancozeb @ 3.0 g/liter or Metalaxyl-M + Mancozeb @ 2.5 g/liter.
+- De-haulm (cut and remove potato vines) 10-14 days before harvest to eliminate sporangia transfer from foliage to tubers during lifting.

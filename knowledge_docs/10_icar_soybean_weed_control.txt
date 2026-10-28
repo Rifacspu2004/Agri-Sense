@@ -1,0 +1,16 @@
+---
+title: Weed Management Regimes in Soybean (Glycine max)
+publisher: Indian Council of Agricultural Research (ICAR)
+url: https://icar.org.in/bulletin/soybean-integrated-weed-management
+date: 2023-05-30
+category: Weed Science & Soybean Cultivation
+---
+Soybean is highly sensitive to weed competition during the critical crop-weed competition window spanning the first 30 to 45 days after sowing (DAS). Uncontrolled weeds (such as Echinochloa colona, Digera arvensis, Cyperus rotundus) can cause yield losses exceeding 40-60%.
+
+Integrated Herbicide and Cultural Protocols:
+1. Pre-Emergence Herbicide Application:
+- Apply Pendimethalin 38.7% CS @ 1.75 - 2.0 liters/ha or Diclosulam 84% WDG @ 26-30 g/ha dissolved in 500 liters water/ha within 48 hours of sowing on moist soil surface.
+2. Early Post-Emergence Herbicide Options (15 to 20 DAS):
+- For mixed weed flora (broadleaf and grasses): Apply Imazethapyr 10% SL @ 1.0 liter/ha or Propaquizafop 2.5% + Imazethapyr 3.75% ME @ 2.0 liters/ha.
+3. Cultural Suppression:
+- Inter-row cultivation with a sweep blade or power weeder at 25-30 DAS breaks soil crust and eliminates escapes while promoting root aeration. Maintain optimal plant canopy density (400,000 to 450,000 plants/ha) to ensure early row closure.

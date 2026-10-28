@@ -1,0 +1,20 @@
+---
+title: Soybean and Oilseed Legume Yield Modeling Dynamics
+publisher: American Society of Agronomy & ICAR-IISR
+url: https://icar.org.in/iisr/soybean-yield-physiology
+date: 2023-04-05
+category: Oilseed & Legume Yield
+---
+Soybean (Glycine max) is a premier global oilseed and high-protein crop. Yield modeling in soybean centers on pod production per plant, seeds per pod, and individual 100-seed test weight:
+
+1. Yield Determinants in Soybean:
+- Yield equation: Total Yield = (Plants / ha) × (Pods / plant) × (Seeds / pod) × (Seed weight).
+- Pod number per plant is the single most variable yield component, accounting for 70% of seasonal yield variance. Pod abortion occurs rapidly if moisture or nitrogen stress hits between growth stages R3 (beginning pod) and R5 (beginning seed).
+
+2. Typical National Yield Ranges:
+- USA / Brazil / Argentina: 2.7 to 3.5 tonnes/ha (27,000 to 35,000 hg/ha).
+- India (Central Rainfed Plateau): 1.0 to 1.5 tonnes/ha (10,000 to 15,000 hg/ha).
+- China: 1.8 to 2.2 tonnes/ha (18,000 to 22,000 hg/ha).
+
+3. Sensitivity to High Daytime Temperatures:
+Soybean photosynthetic assimilation drops sharply when ambient temperatures exceed 32°C. Sustained daytime highs of 36°C during the flowering stage cause excessive flower abscission, leading to irreversible yield reductions of 20-35%.

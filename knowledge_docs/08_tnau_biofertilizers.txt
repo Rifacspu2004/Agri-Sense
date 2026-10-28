@@ -1,0 +1,18 @@
+---
+title: Biofertilizers and Enriched Vermicomposting Practices
+publisher: TNAU Agritech Portal
+url: https://agritech.tnau.ac.in/org_farming/biofertilizers_application.html
+date: 2023-06-22
+category: Soil Biology & Organic Nutrition
+---
+Biofertilizers are microbial inoculants containing live formulations of beneficial microorganisms that mobilize plant nutrients through nitrogen fixation, phosphorus solubilization, or zinc mobilization.
+
+Recommended Bio-Inoculants:
+1. Azospirillum / Azotobacter:
+- Azospirillum brasilense associates with non-legume crops (rice, maize, sorghum, wheat, sugarcane), fixing 20-40 kg N/ha and secreting auxins (IAA) and gibberellins that promote root elongation.
+- Dosage: Seed treatment @ 200 g/10 kg seed or seedling root dip @ 1 kg/ha in 40 liters of water.
+2. Phosphobacteria (Bacillus megaterium / Pseudomonas striata):
+- Solubilizes insoluble tricalcium phosphate and rock phosphate into plant-available orthophosphate ions (H2PO4-) via organic acid secretion (citric, gluconic, succinic acids).
+3. Mycorrhizae (VAM - Glomus intraradices):
+- Enhances effective root surface absorption area by up to 100-fold, dramatically improving phosphorus, zinc, and water uptake under dryland moisture stress.
+Application Note: Never mix biofertilizers with chemical fungicides or insecticides; maintain a minimum 48-hour gap.

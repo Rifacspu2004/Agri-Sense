@@ -1,0 +1,18 @@
+---
+title: Post-Harvest Grain Storage and Mycotoxin Prevention Protocols
+publisher: Food and Agriculture Organization (FAO) Guidelines
+url: https://www.fao.org/post-harvest-preservation/grain-storage
+date: 2023-04-18
+category: Post-Harvest & Storage
+---
+Post-harvest losses in cereal grains (maize, wheat, paddy, sorghum) frequently claim 15-25% of gross farm yields due to fungal rots, weevil infestation, and toxic mycotoxin contamination (Aflatoxin B1 produced by Aspergillus flavus).
+
+Standard Storage Protocols:
+1. Safe Moisture Thresholds at Threshing:
+- Paddy/Rice: Dry grain uniformly down to 13.0 - 14.0% moisture content.
+- Maize: Dry down to 12.5 - 13.5% before bagging.
+- Wheat and Sorghum: Dry to 11.5 - 12.0%. Storing grain above 14% moisture triggers respiratory heat buildup and mold proliferation.
+2. Hermetic Storage Bags (PICS - Purdue Improved Crop Storage):
+- Triple-layer polyethylene hermetic bags eliminate ambient oxygen exchange within 10-14 days through natural insect and grain respiration, killing adult and larval weevils (Sitophilus oryzae, Prostephanus truncatus) without chemical fumigants.
+3. Silo Sanitation:
+- Clean and whitewash storage godowns; spray walls with Malathion 50% EC (1:100 dilution) before stacking fresh grain lots. Place dunnage pallets 15 cm above ground to halt capillary dampness.

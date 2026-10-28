@@ -1,0 +1,20 @@
+---
+title: Sorghum and Dryland Coarse Cereal Yield Prediction Dynamics
+publisher: ICRISAT (International Crops Research Institute for the Semi-Arid Tropics)
+url: https://www.icrisat.org/crop-yields/sorghum-resilience-benchmarks
+date: 2023-03-12
+category: Dryland Cereal Yield
+---
+Grain Sorghum (Sorghum bicolor) functions as an essential drought-hardy staple across dryland agro-ecologies where maize frequently suffers catastrophic yield failure.
+
+1. Agronomic Yield Boundaries:
+- Commercial High-Input (USA, Australia): 4.0 to 6.5 tonnes/ha (40,000 to 65,000 hg/ha).
+- Rainfed Semi-Arid Tropics (India, Nigeria, Sudan): 0.9 to 1.8 tonnes/ha (9,000 to 18,000 hg/ha).
+
+2. Physiological Adaptations Dictating Yield Stability:
+- C4 Photosynthetic Efficiency: Exhibits higher water-use efficiency (transpiration ratio: 300-350 kg water per kg dry matter compared to 500-600 kg in C3 wheat).
+- Osmotic Adjustment & Leaf Rolling: During severe dry spells, sorghum halts expansion and rolls leaves to curtail transpiration, entering a semi-dormant state, resuming development when rains recur.
+- Stomatal Conductance: Stomata close promptly at lower leaf water potentials without causing cellular membrane destruction.
+
+3. Yield Prediction in Erratic Monsoon Zones:
+In supervised regression pipelines, sorghum demonstrates the lowest variance to rainfall deviations between 400 mm and 800 mm compared to all other cereals.
