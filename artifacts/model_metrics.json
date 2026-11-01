@@ -1,13 +1,13 @@
 {
   "model_architecture": "RandomForestRegressor + ColumnTransformer (Optimized)",
-  "train_samples": 196,
-  "test_samples": 49,
+  "train_samples": 292,
+  "test_samples": 73,
   "r2_score_train": 0.9999,
-  "r2_score_test": 0.9994,
-  "mae_hg_per_ha": 2064.12,
-  "rmse_hg_per_ha": 2975.9,
-  "mae_tonnes_per_ha": 0.206,
-  "rmse_tonnes_per_ha": 0.298,
+  "r2_score_test": 0.9996,
+  "mae_hg_per_ha": 1434.23,
+  "rmse_hg_per_ha": 2539.67,
+  "mae_tonnes_per_ha": 0.143,
+  "rmse_tonnes_per_ha": 0.254,
   "supported_areas": [
     "Australia",
     "Brazil",
@@ -33,31 +33,35 @@
   ],
   "feature_ranges": {
     "Year": {
-      "min": 2018.0,
+      "min": 2014.0,
       "max": 2024.0,
-      "mean": 2021.0
+      "mean": 2019.1917808219177
     },
     "average_rain_fall_mm_per_year": {
       "min": 51.0,
       "max": 2750.0,
-      "mean": 964.1142857142858
+      "mean": 945.654794520548
     },
     "pesticides_tonnes": {
       "min": 6500.0,
       "max": 380000.0,
-      "mean": 92714.28571428571
+      "mean": 95679.45205479451
     },
     "avg_temp": {
       "min": 12.4,
       "max": 27.6,
-      "mean": 21.665714285714287
+      "mean": 21.62657534246576
     }
   },
   "target_unit": "hg/ha and tonnes/ha",
   "data_sources": [
-    "FAOSTAT / Kaggle Open Archive"
+    "Existing local training dataset"
   ],
   "years_represented": [
+    2014,
+    2015,
+    2016,
+    2017,
     2018,
     2019,
     2020,

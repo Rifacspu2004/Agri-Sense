@@ -1,12 +1,14 @@
 """
-Data Audit Module for Kaggle Crop Yield Prediction Dataset.
+Data Audit Module for the crop-yield training dataset.
 Inspects columns: Area, Item, Year, rainfall, pesticides, temperature, and yield target.
 """
 
 import json
 from pathlib import Path
-from typing import Dict, Any, List
+from typing import Dict, Any, List, Optional
 import pandas as pd
+
+from src.config import DATA_DIR
 
 
 REQUIRED_COLUMNS = [
@@ -20,14 +22,14 @@ REQUIRED_COLUMNS = [
 ]
 
 
-def run_data_audit(csv_path: str = "data/raw/yield_df.csv", output_dir: str = "artifacts") -> Dict[str, Any]:
+def run_data_audit(csv_path: Optional[str] = None, output_dir: str = "artifacts") -> Dict[str, Any]:
     """
     Audits the input dataset to ensure schema compliance, statistical validity,
     and absence of critical missing values.
     """
-    file_path = Path(csv_path)
+    file_path = Path(csv_path) if csv_path else DATA_DIR / "yield_df.csv"
     if not file_path.exists():
-        raise FileNotFoundError(f"Dataset not found at {csv_path}")
+        raise FileNotFoundError(f"Dataset not found at {file_path}")
 
     df = pd.read_csv(file_path)
 

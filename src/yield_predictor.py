@@ -141,6 +141,16 @@ class YieldPredictor:
             confidence = "Heuristic Baseline (Model Training Pending)"
             notes.append("Trained joblib pipeline was not found; prediction uses FAO historical agronomic baseline.")
 
+        training_years = self.metrics.get("years_represented", []) if self.metrics else []
+        if self.pipeline is not None and training_years:
+            latest_training_year = max(int(year) for year in training_years)
+            if req.year > latest_training_year:
+                confidence = "Indicative Future Scenario (Historical ML Model)"
+                notes.append(
+                    f"The selected year is beyond the latest training year ({latest_training_year}); "
+                    "this is an unvalidated scenario estimate, not a confirmed yield forecast."
+                )
+
         # Unit conversion: 10,000 hectograms/ha = 1 metric tonne/ha
         yield_tonnes = round(yield_hg / 10000.0, 3)
         yield_hg_rounded = round(yield_hg, 1)

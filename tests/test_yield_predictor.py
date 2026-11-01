@@ -59,3 +59,27 @@ def test_supported_lists_exist():
     assert len(crops) >= 5, "Should support core staple crops"
     assert "India" in areas or "United States" in areas
     assert "Maize" in crops and "Wheat" in crops
+
+
+def test_future_year_is_reported_as_an_unvalidated_scenario():
+    class ConstantPipeline:
+        def predict(self, row):
+            return [28000.0]
+
+    predictor = YieldPredictor.__new__(YieldPredictor)
+    predictor.pipeline = ConstantPipeline()
+    predictor.metrics = {"years_represented": [2018, 2020, 2024]}
+
+    result = predictor.predict(
+        CropYieldInput(
+            area="India",
+            crop="Maize",
+            year=2028,
+            rainfall_mm=1100.0,
+            pesticides_tonnes=75000.0,
+            temperature_celsius=25.0,
+        )
+    )
+
+    assert "Indicative Future Scenario" in result.confidence_tier
+    assert any("beyond the latest training year (2024)" in note for note in result.agronomic_notes)

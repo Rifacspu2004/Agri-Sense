@@ -85,7 +85,7 @@ class AgriSenseAgentRouter:
                 from src.train_model import train_yield_model
                 pipe, metrics = train_yield_model(auto_fetch_sources=True, optimize_hyperparams=True)
                 self.yield_predictor.load_model()
-                sources_str = ", ".join(metrics.get("data_sources", ["FAOSTAT / World Bank"]))
+                sources_str = ", ".join(metrics.get("data_sources", ["Existing local training dataset"]))
                 response_text = (
                     f"### 🚀 Automated Dataset Acquisition & Model Retraining Complete!\n\n"
                     f"- **Data Sources Connected**: {sources_str}\n"
@@ -102,11 +102,11 @@ class AgriSenseAgentRouter:
                     "response": response_text,
                     "citations": [
                         {
-                            "title": "FAOSTAT & World Bank Open Agricultural Indicators",
-                            "url": "https://www.fao.org/faostat/en/#data/QCL",
-                            "publisher": "United Nations FAO & World Bank Open Data",
+                            "title": "World Bank API & Embedded Crop Benchmark Estimates",
+                            "url": "https://api.worldbank.org/v2/indicator/AG.YLD.CREL.KG",
+                            "publisher": "World Bank Open Data & AgriSense",
                             "date": "2024",
-                            "type": "Live Open API Ingestion"
+                            "type": "Dataset source"
                         }
                     ],
                     "source_mode": "Automated Training Pipeline"
@@ -252,4 +252,3 @@ class AgriSenseAgentRouter:
             extracted["year"] = int(year_match.group(1))
 
         return extracted
-

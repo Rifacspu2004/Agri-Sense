@@ -1,17 +1,20 @@
 {
   "status": "PASSED",
   "dataset_path": "data\\raw\\yield_df.csv",
-  "total_records": 210,
-  "unique_areas_count": 7,
+  "total_records": 365,
+  "unique_areas_count": 11,
   "unique_crops_count": 8,
   "areas_sample": [
     "Australia",
     "Brazil",
     "Egypt",
+    "Egypt, Arab Rep.",
     "France",
     "India",
+    "Indonesia",
     "Nigeria",
-    "United States"
+    "Pakistan",
+    "South Africa"
   ],
   "crops_sample": [
     "Cassava",
@@ -43,43 +46,43 @@
   },
   "numeric_statistics": {
     "Year": {
-      "min": 2018.0,
+      "min": 2014.0,
       "max": 2024.0,
-      "mean": 2021.0,
-      "median": 2021.0,
-      "std": 2.0,
+      "mean": 2019.19,
+      "median": 2019.0,
+      "std": 3.13,
       "nulls": 0
     },
     "hg/ha_yield": {
       "min": 13500.0,
-      "max": 514560.0,
-      "mean": 127911.47,
-      "median": 81736.0,
-      "std": 133260.09,
+      "max": 537600.0,
+      "mean": 123266.52,
+      "median": 73357.0,
+      "std": 131753.42,
       "nulls": 0
     },
     "average_rain_fall_mm_per_year": {
       "min": 51.0,
-      "max": 1780.0,
-      "mean": 907.97,
+      "max": 2750.0,
+      "mean": 945.65,
       "median": 890.0,
-      "std": 493.82,
+      "std": 551.34,
       "nulls": 0
     },
     "pesticides_tonnes": {
       "min": 6500.0,
       "max": 380000.0,
-      "mean": 101733.33,
+      "mean": 95679.45,
       "median": 62000.0,
-      "std": 127283.58,
+      "std": 122497.64,
       "nulls": 0
     },
     "avg_temp": {
       "min": 12.4,
       "max": 27.6,
-      "mean": 21.55,
+      "mean": 21.63,
       "median": 22.8,
-      "std": 5.7,
+      "std": 5.52,
       "nulls": 0
     }
   },

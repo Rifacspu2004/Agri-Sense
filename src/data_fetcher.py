@@ -1,10 +1,7 @@
 """
 Automated Dataset Acquisition Engine for AgriSense.
-Fetches verified agricultural crop yield and agrometeorological data from trusted open sources:
-1. World Bank Open Data API (0 API key required - free public API)
-2. FAOSTAT Open Data Hub & Verified Agricultural Mirrors
-3. Kaggle API integration (when KAGGLE_USERNAME & KAGGLE_KEY are configured)
-4. Dynamic historical dataset generation based on official FAO annual crop statistics (2018-2024+)
+Fetches cereal yield data from the World Bank API and combines it with embedded
+crop benchmark estimates saved in the project as the training dataset.
 """
 
 import os
@@ -18,37 +15,24 @@ import pandas as pd
 from src.config import DATA_DIR, ARTIFACTS_DIR
 
 
-# Official FAO / World Bank indicator mappings
+TRUSTED_SOURCES = [
+    {
+        "name": "World Bank Open Agriculture Indicators",
+        "endpoint": "https://api.worldbank.org/v2/country/all/indicator/AG.YLD.CREL.KG?format=json",
+        "description": "World Bank cereal yield indicator queried by the automated fetcher",
+        "license": "Open Data"
+    }
+]
+
+
 WORLD_BANK_INDICATORS = {
     "cereal_yield_kg_per_ha": "AG.YLD.CREL.KG",
     "agricultural_land_sq_km": "AG.LND.AGRI.K2",
     "fertilizer_consumption_kg_per_ha": "AG.CON.FERT.ZS"
 }
 
-TRUSTED_SOURCES = [
-    {
-        "name": "Food and Agriculture Organization (FAOSTAT)",
-        "endpoint": "https://fenixservices.fao.org/faostat/api/v1/en/data/QC",
-        "description": "UN Official global crop production and yield statistical repository",
-        "license": "CC-BY 4.0 (Open Data)"
-    },
-    {
-        "name": "World Bank Open Agriculture Indicators",
-        "endpoint": "https://api.worldbank.org/v2/country/all/indicator/AG.YLD.CREL.KG?format=json",
-        "description": "National yield metrics across 200+ sovereign territories",
-        "license": "Open Data Commons"
-    },
-    {
-        "name": "Kaggle Agricultural Yield Repository Mirror",
-        "endpoint": "https://raw.githubusercontent.com/datasets/crop-yields/master/data/cereal-yields-uk.csv",
-        "description": "Verified peer-reviewed tabular crop yield archives",
-        "license": "Open Data"
-    }
-]
-
-
 class AutomatedDatasetFetcher:
-    """Acquires, validates, and stores verified crop yield data without manual intervention."""
+    """Fetches World Bank data and persists it with embedded benchmark estimates."""
 
     def __init__(self, output_path: Optional[Path] = None):
         self.output_path = output_path or (DATA_DIR / "yield_df.csv")
@@ -56,14 +40,16 @@ class AutomatedDatasetFetcher:
 
     def fetch_and_update_dataset(self, years_back: int = 6) -> Dict[str, Any]:
         """
-        Main pipeline: connects to trusted data sources, compiles recent multi-year records,
-        merges with verified baselines, and saves to data/raw/yield_df.csv.
+        Fetches World Bank records, adds embedded benchmark estimates, and saves
+        the combined training dataset to the configured data directory.
         """
         acquisition_log: Dict[str, Any] = {
             "timestamp": time.strftime("%Y-%m-%dT%H:%M:%SZ"),
-            "sources_queried": [],
+            "sources_queried": ["World Bank Open Data API"],
+            "sources_used": [],
             "status": "IN_PROGRESS",
             "records_fetched": 0,
+            "records_generated": 0,
             "years_covered": []
         }
 
@@ -73,25 +59,34 @@ class AutomatedDatasetFetcher:
         wb_records = self._fetch_world_bank_yield_records()
         if wb_records:
             records.extend(wb_records)
-            acquisition_log["sources_queried"].append("World Bank Open Data API")
 
-        # 2. Fetch / Sync from Verified FAO Multi-Crop Mirror
-        fao_records = self._fetch_fao_verified_recent_records(years_back=years_back)
-        records.extend(fao_records)
-        acquisition_log["sources_queried"].append("FAOSTAT Crop Production Open Mirror")
+        # 2. Add embedded benchmark estimates; these are not live FAOSTAT records.
+        benchmark_records = self._generate_reference_records(years_back=years_back)
+        records.extend(benchmark_records)
+        acquisition_log["records_fetched"] = len(wb_records)
+        acquisition_log["records_generated"] = len(benchmark_records)
+        if wb_records:
+            acquisition_log["sources_used"].append("World Bank Open Data API")
+        if benchmark_records:
+            acquisition_log["sources_used"].append("Embedded benchmark estimates")
 
         # 3. Consolidate and Clean Data
         df_new = pd.DataFrame(records)
+        existing_keys = set()
         
         # Load existing data if available to avoid losing prior historical records
         if self.output_path.exists():
             try:
                 df_existing = pd.read_csv(self.output_path)
+                existing_keys = set(
+                    df_existing[["Area", "Item", "Year"]].itertuples(index=False, name=None)
+                )
                 # Combine and drop duplicates on [Area, Item, Year]
                 combined = pd.concat([df_existing, df_new], ignore_index=True)
                 combined.drop_duplicates(subset=["Area", "Item", "Year"], keep="last", inplace=True)
                 df_final = combined
             except Exception:
+                existing_keys = set()
                 df_final = df_new
         else:
             df_final = df_new
@@ -104,6 +99,7 @@ class AutomatedDatasetFetcher:
         df_final = df_final.dropna(subset=["Area", "Item", "Year", "hg/ha_yield"])
         df_final = df_final[required_cols]
         df_final.sort_values(by=["Area", "Item", "Year"], inplace=True)
+        final_keys = set(df_final[["Area", "Item", "Year"]].itertuples(index=False, name=None))
 
         # Save to disk
         self.output_path.parent.mkdir(parents=True, exist_ok=True)
@@ -113,7 +109,7 @@ class AutomatedDatasetFetcher:
         unique_years = sorted(df_final["Year"].unique().tolist())
         acquisition_log["status"] = "SUCCESS"
         acquisition_log["total_records_in_dataset"] = int(len(df_final))
-        acquisition_log["new_records_added"] = len(records)
+        acquisition_log["new_records_added"] = len(final_keys - existing_keys)
         acquisition_log["distinct_crops"] = sorted(df_final["Item"].unique().tolist())
         acquisition_log["distinct_countries"] = len(df_final["Area"].unique())
         acquisition_log["years_covered"] = [int(y) for y in unique_years]
@@ -158,10 +154,10 @@ class AutomatedDatasetFetcher:
             print(f"World Bank API notice: {e}")
         return records
 
-    def _fetch_fao_verified_recent_records(self, years_back: int = 6) -> List[Dict[str, Any]]:
+    def _generate_reference_records(self, years_back: int = 6) -> List[Dict[str, Any]]:
         """
-        Synthesizes / pulls verified empirical FAO data for past 6 years (2018 - 2024+)
-        across key staples (Maize, Potatoes, Rice, paddy, Soybeans, Cassava, Sorghum).
+        Generates historical training examples from embedded country/crop benchmark
+        values and a simple annual growth assumption.
         """
         records = []
         current_year = 2024

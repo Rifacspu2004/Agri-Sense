@@ -1,12 +1,20 @@
 {
-  "timestamp": "2026-10-28T18:58:43Z",
+  "timestamp": "2026-11-01T10:13:41Z",
   "sources_queried": [
+    "World Bank Open Data API"
+  ],
+  "sources_used": [
     "World Bank Open Data API",
-    "FAOSTAT Crop Production Open Mirror"
+    "Embedded benchmark estimates"
   ],
   "status": "SUCCESS",
-  "records_fetched": 0,
+  "records_fetched": 63,
+  "records_generated": 330,
   "years_covered": [
+    2014,
+    2015,
+    2016,
+    2017,
     2018,
     2019,
     2020,
@@ -15,8 +23,8 @@
     2023,
     2024
   ],
-  "total_records_in_dataset": 245,
-  "new_records_added": 273,
+  "total_records_in_dataset": 365,
+  "new_records_added": 90,
   "distinct_crops": [
     "Cassava",
     "Maize",

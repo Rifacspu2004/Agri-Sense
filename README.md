@@ -9,29 +9,35 @@
 **AgriSense** combines a structured machine learning **crop-yield predictor** with a local **Retrieval-Augmented Generation (RAG)** knowledge base and a **live web search fallback**:
 
 1. **Numeric Crop Yield Prediction (Primary Focus):**
-   - Trained on historical Kaggle/FAOSTAT crop yield data (`Area`, `Item`, `Year`, `rainfall`, `pesticides`, `temperature`, `hg/ha_yield`).
+   - Trained on the project’s local crop-yield dataset (`Area`, `Item`, `Year`, rainfall, pesticides, temperature, and `hg/ha_yield`).
    - Supervised ML Pipeline with `scikit-learn` (`ColumnTransformer` + `RandomForestRegressor`).
    - Outputs explicit dual units: **tonnes/hectare (t/ha)** and **hectograms/hectare (hg/ha)** alongside agronomic limitation notes (e.g. drought stress, temperature caps).
+   - Loads annual rainfall and mean-temperature estimates automatically for the selected year and location; manual weather overrides are optional.
 
-2. **Automated Live Dataset Ingestion (Zero Manual Download):**
-   - Connects directly to **World Bank Open Data API** and **FAOSTAT Open Mirrors** via [`src/data_fetcher.py`](file:///d:/intern%20Project/Agri%20Sense%20Agent/src/data_fetcher.py).
-   - Fetches historical multi-year records (past 5–6+ years), merges them, and cleans schema automatically.
-   - Retrains the `RandomForestRegressor` with continuous hyperparameter search to maximize accuracy without needing manual CSV downloading.
+2. **Year- and Location-Based Climate Inputs:**
+   - Uses Open-Meteo geocoding plus its Climate API to retrieve daily climate-model data for the selected country and optional city/town.
+   - Aggregates the daily data into annual rainfall and mean temperature using the median across three climate models.
+   - Climate-model values are scenario estimates, not day-specific weather forecasts. The crop-yield model is trained on historical data, so predictions beyond its latest training year are clearly marked as unvalidated future scenarios.
 
-3. **Crop Yield Knowledge Base (Local RAG):**
+3. **Automated Dataset Ingestion and Inspection:**
+   - Fetches cereal-yield rows from the **World Bank Open Data API** when available and combines them with embedded crop benchmark estimates in [`src/data_fetcher.py`](./src/data_fetcher.py). The embedded estimates are not live FAOSTAT downloads.
+   - Saves the combined training dataset to `data/raw/yield_df.csv`; the **Model & Data Diagnostics** tab displays its rows and columns and lets you download the CSV.
+   - Retrains the `RandomForestRegressor` with optional hyperparameter search using that persisted dataset.
+
+4. **Crop Yield Knowledge Base (Local RAG):**
    - Curated authoritative documents in `knowledge_docs/` focused strictly on **Crop Yield Prediction, Yield Modeling, Benchmarks, Rainfall/Temperature Impact Curves, and Yield Gaps**.
    - Offline, fast semantic search with source titles, publishers, dates, and active links.
 
-4. **Live Search for Other Agricultural Aspects:**
+5. **Live Search for Other Agricultural Aspects:**
    - If an inquiry is outside crop yield prediction (e.g., pests, crop diseases, fertilizer brands, market prices, irrigation technology), the agent dynamically searches live online sources.
    - Powered by **Tavily Web Search** or **Free DuckDuckGo Search (100% free, 0 keys needed)**.
 
-5. **Dedicated API Key Center:**
+6. **Dedicated API Key Center:**
    - Kept in a dedicated place (`.env` and in the interactive **API Keys & Settings** tab in the Streamlit UI).
    - Compatible with **100% Free Tiers** (Tavily free tier, Google Gemini free AI Studio, Groq free tier).
    - Zero cost required to run the full application.
 
-6. **Agriculture-Only Guardrails:**
+7. **Agriculture-Only Guardrails:**
    - Deterministic scope gate refusing out-of-scope queries (general coding, medical advice, entertainment).
    - Ingestion sanitization to mitigate prompt injection.
 
@@ -54,7 +60,7 @@ Agri Sense Agent/
 │
 ├── data/
 │   └── raw/
-│       └── yield_df.csv          # Kaggle/FAOSTAT crop yield training dataset
+│       └── yield_df.csv          # Persisted training dataset (World Bank + embedded estimates)
 │
 ├── artifacts/
 │   ├── audit_report.json         # Data audit summary and column stats
@@ -77,7 +83,8 @@ Agri Sense Agent/
 ├── src/
 │   ├── __init__.py
 │   ├── config.py                 # Centralized API key and directory management
-│   ├── data_fetcher.py           # Automated dataset retrieval from World Bank & FAOSTAT
+│   ├── data_fetcher.py           # World Bank retrieval and embedded benchmark generation
+│   ├── weather_fetcher.py        # Location/year climate estimates from Open-Meteo
 │   ├── data_audit.py             # Schema, missing values, and column verification
 │   ├── train_model.py            # RandomForestRegressor training & hyperparameter search
 │   ├── yield_predictor.py        # Inference engine with units & limitation notes

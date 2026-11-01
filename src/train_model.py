@@ -1,6 +1,6 @@
 """
 Machine Learning Training Pipeline for AgriSense Crop Yield Predictor.
-Supports automatic dataset sourcing from trusted APIs (FAOSTAT & World Bank),
+Supports automatic World Bank data retrieval and embedded benchmark generation,
 hyperparameter optimization for accuracy improvement, and persistent artifact generation.
 """
 
@@ -18,6 +18,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
 
+from src.config import DATA_DIR
 from src.data_fetcher import AutomatedDatasetFetcher
 
 
@@ -68,7 +69,7 @@ def build_pipeline(n_estimators: int = 150, max_depth: int = 18) -> Pipeline:
 
 
 def train_yield_model(
-    csv_path: str = "data/raw/yield_df.csv",
+    csv_path: Optional[str] = None,
     output_dir: str = "artifacts",
     test_size: float = 0.2,
     random_state: int = 42,
@@ -77,23 +78,23 @@ def train_yield_model(
 ) -> Tuple[Pipeline, Dict[str, Any]]:
     """
     Trains crop yield regression pipeline:
-    1. If auto_fetch_sources is True, automatically retrieves latest multi-year data from trusted APIs.
+    1. If auto_fetch_sources is True, retrieves World Bank data and generates embedded benchmark records.
     2. Loads compiled dataset and splits into train/test sets.
     3. Fits model with optional hyperparameter grid to maximize R^2 accuracy.
     4. Serializes model bundle to artifacts/yield_model.joblib and logs performance metrics.
     """
-    data_path = Path(csv_path)
+    data_path = Path(csv_path) if csv_path else DATA_DIR / "yield_df.csv"
 
     # 1. Automatic data acquisition from trusted open sources if requested or if missing
     fetch_summary: Optional[Dict[str, Any]] = None
     if auto_fetch_sources or not data_path.exists():
-        print("🌐 Connecting to trusted sources (World Bank & FAOSTAT) to acquire crop yield data...")
+        print("🌐 Fetching World Bank yield data and preparing embedded benchmark records...")
         fetcher = AutomatedDatasetFetcher(output_path=data_path)
         fetch_summary = fetcher.fetch_and_update_dataset(years_back=6)
         print(f"✅ Data acquisition complete! Total records: {fetch_summary.get('total_records_in_dataset', 0)}")
 
     if not data_path.exists():
-        raise FileNotFoundError(f"Input dataset not found at {csv_path}")
+        raise FileNotFoundError(f"Input dataset not found at {data_path}")
 
     df = pd.read_csv(data_path)
 
@@ -162,7 +163,7 @@ def train_yield_model(
         "supported_crops": crops,
         "feature_ranges": ranges,
         "target_unit": "hg/ha and tonnes/ha",
-        "data_sources": fetch_summary.get("sources_queried", ["FAOSTAT / Kaggle Open Archive"]) if fetch_summary else ["FAOSTAT / Kaggle Open Archive"],
+        "data_sources": fetch_summary.get("sources_used", ["Existing local training dataset"]) if fetch_summary else ["Existing local training dataset"],
         "years_represented": sorted(df["Year"].unique().tolist())
     }
 
